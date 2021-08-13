@@ -1,0 +1,12 @@
+version: '3.8'
+services: 
+  api:
+    build: .
+    container_name: fast-api
+    ports: 
+      - 5000:15400
+    volumes: 
+      - ./api:/api
+      - ./upload-images/:/upload-images/user/
+    env_file: 
+      - ./api/.env

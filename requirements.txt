@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+starlette
+pytz
+databases
+sqlalchemy
+pydantic[dotenv]
+asyncpg
+psycopg2
+passlib
+pyjwt
+python-jose[cryptography]
+bcrypt
+python-multipart
+fastapi-mail
+Pillow

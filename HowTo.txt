@@ -1,0 +1,29 @@
+Build image & compose
+# docker-compose up -d
+
+Restart container
+# docker restart <container-id> or <container-name>
+
+Rebuild
+# docker-compose build --no-cache
+
+Delete image
+# docker image rm <image-id>
+
+# docker inspect <container-id>
+
+# docker exec -it <container-id> sh
+
+#docker-compose up --build
+
+
+If Run with docker
+1. change HOST in .env file to 'host.docker.internal' to connect db outside docker
+2. Run command
+# docker-compose up --build
+
+If Run with uvicorn command line
+1. go to dbUtil.py and change path of env (.env -> api/.env)
+2. go to emailUtil.py and change path of env (.env -> api/.env)
+3. Run command
+# uvicorn api.main:app --reload
